@@ -33,7 +33,7 @@
 
 ## About The Project
 
-Mama recipe is the web application that you can post your delicious recipe. You can create your account and start posting your recipe.
+Telegram Backend is a RESTful API used in [Telegram Chat](https://telegramchat.vercel.app/). This API handles every functions in Telegram Application, such as login, register, update profile, get lists of contacts and chat, and send message to other user.
 
 ### Project Structure
 
@@ -139,5 +139,6 @@ Contributions are what make the open source community such an amazing place to b
 ## Related Project
 
 :rocket: [`Telegram Chat (Frontend)`](https://github.com/IchsanR/telegram-frontend)
+:rocket: [`Telegram Chat (Demo)`](https://telegramchat.vercel.app/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
