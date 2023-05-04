@@ -11,14 +11,16 @@ require("dotenv").config();
 const app = express();
 
 app.use(express.static("public"));
-app.use(cors());
+app.use(
+	cors({
+		origin: "*",
+		methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+		preflightContinue: false,
+		optionsSuccessStatus: 200,
+	})
+);
 app.use(bodyParser.json());
 app.use(userRouter);
-// app.get("/ping", (req, res) => {
-// 	res.json({
-// 		message: "PONG",
-// 	});
-// });
 
 const server = http.createServer(app);
 const io = socket(server, {
